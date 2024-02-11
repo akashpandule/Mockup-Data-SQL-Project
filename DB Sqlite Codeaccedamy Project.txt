@@ -1,0 +1,25 @@
+Using DB Sqlite Codeaccedamy Project base on SQL
+Here all step and Qurey we have use in this completing project
+Qurey 1->> Select * from users; 
+
+Qurey 2->> SELECT * FROM progress;
+
+
+Qurey 3->>select * from users where email_domain like '%.edu'limit 25;
+
+Qurey 4->> select count(email_domain)from users where email_domain Like '%.edu' AND city='New York';
+
+Qurey 5->> SELECT COUNT(mobile_app)FROM users WHERE mobile_app = 'mobile-user' OR mobile_app IS NULL;
+
+Qurey 6->> SELECT sign_up_at,strftime('%S', sign_up_at)FROM users GROUP BY 1 LIMIT 20;
+
+Qurey 7->>SELECT * FROM users u
+            LEFT JOIN progress p ON u.user_id = p.user_id
+            WHERE u.city = 'New York';
+
+Qurey 8->> SELECT * FROM users u LEFT JOIN progress p ON u.user_id = p.user_id
+           WHERE u.city = 'Chicago';
+
+
+
+
